@@ -71,9 +71,6 @@ body {
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   appearance: none;
   vertical-align: middle;
   border-radius: 22.5px;

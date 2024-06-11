@@ -39,7 +39,7 @@
     font-weight: 700;
     color: var(--lightgrey-color);
     margin: 0;
-    &[aria-selected="true"] {
+    &[aria-checked="true"] {
         background: var(--orange-color);
         color: var(--darkblue-color);
     }
@@ -71,7 +71,7 @@
             margin-top: -8px;
         }
         .font-attractive-1 {
-            margin-top: 6px;
+            margin-top: 10px;
         }
         .button {
             max-height: 46px;
