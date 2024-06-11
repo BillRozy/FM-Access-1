@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+:root {
+  --rem: 14px;
+  --orange-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --lightgrey-color: hsl(217, 12%, 63%);
+  --darkblue-color: hsl(213, 19%, 18%);
+  --darkerblue-color: hsl(216, 12%, 8%);
+  --gradient-start-color: hsl(215, 20%, 17%);
+  --gradient-end-color: hsl(215, 24%, 12%);
+
+
+  font-family: Overpass, system-ui, sans-serif;
+  font-size: var(--rem);
+  line-height: 22px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--lightgrey-color);
+  background-color: var(--darkerblue-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100vh;
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.flex-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.font-attractive-1 {
+  font-size: 1.71428rem;
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: normal;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkblue-color);
+  padding: 7.5px 12px;
+  border-radius: 22.5px;
+  line-height: normal;
+}
+
+.tag--primary {
+  color: var(--orange-color);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  vertical-align: middle;
+  border-radius: 22.5px;
+  width: 100%;
+  color: var(--darkerblue-color);
+  letter-spacing: 1.87px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: var(--rem);
+  line-height: 1;
+  &:hover {
+    background: var(--white-color);
+    cursor: pointer;
+  }
+}
+
+.button--primary {
+  background: var(--orange-color);
+
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 32px;
+  }
+  .button {
+    font-size: 15px;
+  }
+  .font-attractive-1 {
+    font-size: 28px;
+  }
+  .flex-block {
+    gap: 24px;
+  }
+}

@@ -1,0 +1,16 @@
+#root {
+  width: 100%;
+  max-width: 412px;
+  max-height: 416px;
+  border-radius: 15px;
+  padding: 24px;
+  padding-bottom: 32px;
+  background: radial-gradient(var(--gradient-start-color), var(--gradient-end-color));
+}
+
+@media (min-width: 1440px) {
+  #root {
+    border-radius: 30px;
+    padding: 2.2857rem;
+  }
+}

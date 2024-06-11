@@ -1,0 +1,39 @@
+.img--transaction {
+    width: 144px;
+    height: auto;
+}
+
+.rating-set-block {
+    &.flex-block {
+        padding-top: 10px;
+        padding-bottom: 6px;
+        align-items: center;
+        text-align: center;
+    }
+    .tag {
+        margin-top: 8px;
+    }
+    .font-attractive-1 {
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .img--transaction {
+        width: 162px;
+    }
+    .rating-set-block {
+        &.flex-block {
+            padding-top: 13px;
+            padding-bottom: 6px;
+            align-items: center;
+            text-align: center;
+        }
+        .tag {
+            margin-top: 8px;
+        }
+        .font-attractive-1 {
+            margin-top: 8px;
+        }
+    }
+}
